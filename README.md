@@ -35,8 +35,7 @@ A simple **Java web application** that implements user **login** and **registrat
     id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(100) NOT NULL
-);
+    password VARCHAR(100) NOT NULL);
 
 2. Update your database credentials in the connection file:
 String user = "root";
