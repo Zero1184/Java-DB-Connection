@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e0033, #3e1285, #6a00f4);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Background animations */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main div */
+.forms-div {
+    background-color: rgba(30, 0, 60, 0.9);
+    border: 1px solid #6a00f4;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(106, 0, 244, 0.4);
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forms-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(106, 0, 244, 0.6);
+}
+
+/* Titles */
+.forms-div h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #d3a6ff;
+}
+
+/* Fiels */
+.forms-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.forms-field label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #e0c3fc;
+}
+
+.forms-field input {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e0f5a;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.forms-field input:focus {
+    background-color: #3b1473;
+    box-shadow: 0 0 8px #8b4dff;
+}
+
+/* Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #6a00f4, #a64dff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.4s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #a64dff, #6a00f4);
+    transform: scale(1.03);
+}
+
+/* Link -> Login/Register */
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #e0c3fc;
+}
+
+p a {
+    color: #a64dff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .forms-div {
+        padding: 30px 25px;
+        max-width: 90%;
+    }
+
+    .forms-div h1 {
+        font-size: 1.8rem;
+    }
+
+    .forms-field input {
+        font-size: 0.95rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}

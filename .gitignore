@@ -1,0 +1,42 @@
+# === Java build outputs ===
+*.class
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === Build directories ===
+/build/
+/bin/
+/target/
+/out/
+
+# === IDE (Eclipse) ===
+.project
+.classpath
+.settings/
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+
+# === OS-specific ===
+.DS_Store
+Thumbs.db
+
+# === Web server generated ===
+*.jsp.class
+*.war
+*.ear
+
+# === Sensitive config ===
+db.properties
+.env
+config.properties
+
+# === Libraries ===
+WEB-INF/lib/mysql-connector-*.jar
+
+# === Temporary / cache files ===
+*.cache
+*.log
