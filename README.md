@@ -30,8 +30,7 @@ A simple **Java web application** that implements user **login** and **registrat
    ```sql
    CREATE DATABASE usersdb;
    USE usersdb;
-
-2. Create users table:
+   Create users table:
    CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(100) NOT NULL,
@@ -39,7 +38,7 @@ A simple **Java web application** that implements user **login** and **registrat
     password VARCHAR(100) NOT NULL
 );
 
-3. Update your database credentials in the connection file:
+2. Update your database credentials in the connection file:
 String user = "root";
 String pass = "your_password";
 String database ="your_database";
